@@ -83,3 +83,22 @@ button:hover,.btn:hover,.small-btn:hover{filter:brightness(1.18)}
 .interview-pagination button:disabled{opacity:.35;cursor:not-allowed}
 .interview-note{line-height:1.7}
 @media(max-width:700px){.interview-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.interview-status{align-items:flex-start}.interview-pagination{align-items:flex-start;flex-direction:column}.interview-card{padding:14px}.interview-filter{min-width:100%}}
+
+/* DevOps Prep identity and top-to-bottom learning tree */
+.brand b{letter-spacing:1.4px}.brand b span{color:#aaa}
+.tree-map{display:grid;gap:0;max-width:1100px;margin:18px auto 24px}
+.tree-stage{position:relative;padding:0 0 28px 26px;border-left:1px solid #565656;margin-left:18px}
+.tree-stage:before{content:"";position:absolute;left:-5px;top:4px;width:9px;height:9px;border-radius:50%;background:#d0d0d0;box-shadow:0 0 0 4px #252525}
+.tree-stage:not(:last-child):after{content:"↓";position:absolute;left:-10px;bottom:4px;color:#999;background:#111;padding:0 3px;font:15px "DM Mono",monospace}
+.tree-stage-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 10px;color:#eee;font:11px "DM Mono",monospace;letter-spacing:.8px}
+.tree-stage-head small{color:#777;font-size:9px}
+.tree-nodes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.tree-node{display:grid;grid-template-columns:34px 1fr;align-items:center;gap:4px 10px;text-align:left;background:#131313;border:1px solid #353535;border-radius:9px;padding:12px;color:#eee}
+.tree-node:hover{background:#222;border-color:#777}
+.tree-node>span{grid-row:span 2;font:11px "DM Mono",monospace;color:#999;border-right:1px solid #444;padding-right:8px}
+.tree-node b{font-size:12px}.tree-node small{grid-column:2;color:#888;font:9px "DM Mono",monospace;line-height:1.5}
+.interview-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+.interview-tab{font-size:12px;padding:14px}
+.senior-tip ul{margin:12px 0 0;padding-left:18px;color:#ccc}
+.senior-tip li{margin:5px 0}
+@media(max-width:650px){.tree-nodes{grid-template-columns:1fr}.tree-stage{margin-left:9px;padding-left:19px}.tree-stage-head{font-size:10px}}
