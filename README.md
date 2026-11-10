@@ -1,98 +1,69 @@
-# OpsForge — Personal DevOps Engineering Academy
+# DevOps Prep — Personal DevOps Engineering Academy
 
-A dark-monochrome, interactive, local-first learning academy covering DevOps from absolute foundations through production engineering.
+**Live site:** https://testing-acc-actions.github.io/DevOps/
 
-**Hosted site:** https://testing-acc-actions.github.io/DevOps/
+DevOps Prep is a dark-monochrome, local-first interactive learning academy covering DevOps from foundations through production engineering, cloud-native delivery, AI operations and FinOps.
 
-## Learning sequence
+## Learning order
 
-Every track follows the same practical progression:
+The learning path tree presents the recommended top-to-bottom dependency order:
 
-1. **Topic & concepts** — explain what it is, why it exists, how it works, architecture and trade-offs.
-2. **Knowledge questions** — topic-specific questions with hints, answer guides, use cases and learner answer scoring.
-3. **Production scenarios** — realistic incidents with severity, symptoms, investigation, mitigation, verification and prevention.
-4. **Hands-on lab** — editable starter file, track-specific task list, acceptance checks and an embedded command terminal.
-5. **Project** — connect the topic to larger deliverables and the integrated Employee Management capstone.
+1. **Foundations:** Linux, shell scripting, Git and networking.
+2. **Build & delivery:** build systems, dependencies, CI/CD and release engineering.
+3. **Package & orchestrate:** containers, Kubernetes and Helm.
+4. **Infrastructure & cloud:** Terraform/IaC, AWS and multi-cloud architecture.
+5. **Release & operate:** GitOps, observability, SRE and incident management.
+6. **Security & platform:** DevSecOps, software supply chain and platform engineering.
+7. **Intelligent & efficient operations:** AI/AIOps/MLOps/LLMOps and FinOps.
 
-Question, scenario and lab counts vary with topic depth. They are not capped at a fixed number.
+## Topic learning sequence
+
+Each track follows:
+
+1. Topic and concepts, with deep explanations, examples, expected outcomes, production pitfalls and concept tips.
+2. Knowledge questions with hints, answer guides and learner self-assessment.
+3. Production incident scenarios with investigation and remediation practice.
+4. Hands-on task brief: implementation tasks, questions to answer, and official research resources. No solution code is supplied.
+5. Projects: build deliverables, design questions and documentation links. The implementation is yours.
+
+Question, scenario and lab counts vary with topic complexity rather than a fixed quota.
+
+## Interview preparation
+
+The Interview Prep section has two shuffled modes:
+- **Technology-wise:** choose a technology/topic and practise its questions.
+- **All topics mixed:** shuffle across the full interview bank.
+
+Answers are hidden by default. Reveal them only after attempting an answer. Each entry includes an interview-ready answer, practical example and likely follow-up question.
 
 ## Curriculum
 
-17 tracks cover:
+17 tracks cover Linux, Bash/Python, Git, networking, build systems, CI/CD, containers, Kubernetes, Terraform, AWS, GitOps, observability, DevSecOps, SRE, platform engineering, AI operations and FinOps.
 
-- Linux and operating systems
-- Bash, PowerShell, Python and automation
-- Git and collaborative engineering
-- Networking, DNS, HTTP and TLS
-- Build engineering, dependencies and artifacts
-- CI/CD and release engineering
-- Containers and image supply chain
-- Kubernetes, Helm and cloud native operations
-- Terraform, IaC and configuration management
-- AWS and multi-cloud architecture
-- GitOps and progressive delivery
-- Observability, metrics, logs and tracing
-- DevSecOps and software supply-chain security
-- SRE, incident response and resilience
-- Platform engineering and developer experience
-- AI, AIOps, MLOps, RAG and LLMOps
-- FinOps, governance and cloud cost management
+## Practice and projects
 
-The expanded curriculum includes detailed deep-dive notes with rationale, operating mechanics, worked command/code examples, expected outcomes and production pitfalls.
+The academy includes a standalone safe practice terminal, task-only labs, progressive project briefs, production incident practice, attendance, focus timer and progress export/import.
 
-## Hands-on workspace
+Labs and projects deliberately provide requirements, questions and resources rather than completed solution code. Learners are expected to design, implement, test, document and publish their own work.
 
-Each track has an embedded workspace with:
-- Editable starter code or configuration file.
-- Track-specific command palette and simulated terminal.
-- Task checklist and progress tracking.
-- Text-based acceptance checks and feedback.
-- Suggested evidence to capture in GitHub.
+## Progress and privacy
 
-The academy also includes a general practice terminal, code-repair challenges, incident simulator, progressive projects, senior engineer guidance and a multi-stage Employee Management capstone.
+Progress is stored in browser local storage. It does not synchronize to GitHub or between devices. Export a JSON backup regularly.
 
-## Progress tracking
-
-- Daily attendance.
-- Focus timer.
-- Topic question and incident progress.
-- Lab and project checklists.
-- Approach and knowledge coaching scores.
-- JSON export/import for backups.
-
-Progress is stored in browser local storage. It does not synchronize to GitHub or between devices. Export a backup regularly.
-
-## Important execution and assessment boundaries
-
-The terminal is a safe simulator; it does not run commands on the user's computer, execute arbitrary code, call AWS APIs or create cloud resources. Some commands return simulated output.
-
-The lab editor stores drafts and performs content/acceptance checks. It is not a compiler, interpreter, Terraform provider, YAML parser, linter or security scanner. Run real validators and tests in a disposable local environment before using code in a project.
-
-Knowledge and incident scores are coaching heuristics, not independent semantic grading or certification of engineering competence.
+The practice terminal is a simulator. It does not execute commands on the user's computer, call AWS APIs or create cloud resources. Knowledge and incident scores are coaching heuristics, not certification or semantic grading.
 
 ## Cost and security
 
-The academy itself is a static website and does not require AWS. Cloud labs begin as architecture and code exercises. Before provisioning anything, check current regional pricing, account eligibility, quotas and billing alerts. NAT gateways, load balancers, public IPv4, storage, snapshots, logging and data transfer may incur charges.
+The static academy itself does not require AWS. Before any real cloud lab, check current regional pricing, account eligibility, quotas and billing alerts. NAT gateways, load balancers, public IPv4, storage, snapshots, logging and data transfer may incur charges. Use least privilege, never commit secrets, tag resources with owner/expiry and verify cleanup.
 
-Use least privilege, never commit secrets, tag resources with owner and expiry, and verify cleanup after every real cloud lab.
+## Repository files
 
-## Repository structure
+- `index.html` — application shell and navigation
+- `styles.css` — responsive graphite monochrome interface
+- `app.js` — learning flow, interview shuffle, lab/project briefs, terminal and progress tracking
+- `curriculum.js` — 17-track curriculum, deep dives and assessments
+- `interview-bank.js` — hidden-answer job interview question bank
 
-- `index.html` — application shell
-- `styles.css` — responsive dark-monochrome graphite interface
-- `app.js` — navigation, terminal, lab editor, assessments and progress tracking
-- `curriculum.js` — track content, deep dives, adaptive questions, production scenarios and lab workspaces
+## GitHub Pages
 
-## Publish with GitHub Pages
-
-In **Settings → Pages**, select **Deploy from a branch**, choose **main** and **/(root)**. GitHub Pages publishes the static `index.html` application.
-
-## Interview preparation for job changes
-
-The **Interview Prep** navigation area contains 86 curated DevOps interview questions across the 17 learning tracks. It offers four shuffle modes:
-- Topic-wise: choose a curriculum topic and shuffle its questions.
-- Concept-wise: choose an engineering concept and shuffle matching questions.
-- Tool-wise: choose a tool/tool family and shuffle matching questions.
-- All Mix: shuffle the full interview bank across topics.
-
-The question deck shows 10 randomized questions per batch. Answers are hidden by default; reveal them after attempting an answer aloud. Each reference answer includes an explanation, practical example and likely follow-up question. Shuffle starts a new randomized order and hides previously revealed answers.
+In **Settings → Pages**, select **Deploy from a branch**, choose **main** and **/(root)**.
