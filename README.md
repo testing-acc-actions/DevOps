@@ -67,3 +67,10 @@ The static academy itself does not require AWS. Before any real cloud lab, check
 ## GitHub Pages
 
 In **Settings → Pages**, select **Deploy from a branch**, choose **main** and **/(root)**.
+
+
+## Academy v3 work in progress
+
+The `feature/academy-v3` branch adds role competency maps, a local project-evidence register, practical execution guides for Linux/Docker/Terraform/AWS, transparent assessment rubrics, progress-sync architecture guidance and a GitHub Actions quality workflow. See `docs/` and `labs/`.
+
+The browser remains a static site: it cannot execute real commands or sync data to a cloud account. Real labs run in learner-controlled disposable environments; CI validates repository code and curriculum structure only.
