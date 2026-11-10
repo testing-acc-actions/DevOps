@@ -20,7 +20,7 @@ const trackDone=t=>state.doneTracks.includes(t.id);
 const progressPercent=()=>Math.round((state.doneTracks.length/CURRICULUM.length)*100);
 const mark=(arr,key)=>{if(!arr.includes(key))arr.push(key);save();};
 const idFor=(t,i)=>t.id+"-"+i;
-function setView(v){view=v;document.querySelectorAll(".nav-item").forEach(b=>b.classList.toggle("active",b.dataset.view===v));$("#crumb").textContent=({overview:"COMMAND CENTER",roadmap:"LEARNING ROADMAP",learn:"TOPIC LIBRARY",terminal:"PRACTICE TERMINAL",code:"CODE REPAIR ARENA",incidents:"INCIDENT SIMULATOR",projects:"LABS & PROJECTS",capstone:"MAJOR CAPSTONE",senior:"SENIOR ENGINEER DESK",tracker:"ATTENDANCE & TRACKER",interview:"INTERVIEW PREPARATION"})[v]||v.toUpperCase();render();}
+function setView(v){view=v;document.querySelectorAll(".nav-item").forEach(b=>b.classList.toggle("active",b.dataset.view===v));$("#crumb").textContent=({overview:"COMMAND CENTER",roadmap:"LEARNING ROADMAP",learn:"TOPIC LIBRARY",terminal:"PRACTICE TERMINAL",code:"CODE REPAIR ARENA",incidents:"INCIDENT SIMULATOR",projects:"LABS & PROJECTS",careers:"CAREER PATHS",portfolio:"PORTFOLIO EVIDENCE",capstone:"MAJOR CAPSTONE",senior:"SENIOR ENGINEER DESK",tracker:"ATTENDANCE & TRACKER",interview:"INTERVIEW PREPARATION"})[v]||v.toUpperCase();render();}
 function go(v){setView(v);if(window.innerWidth<760)$("#sidebar").classList.remove("open");}
 function openTrack(id){currentTrack=id;detailTab="overview";go("learn");}
 function progressBar(p){return '<div class="progress-track"><div class="progress-fill" style="width:'+Math.max(0,Math.min(100,p))+'%"></div></div>';}
