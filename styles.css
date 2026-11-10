@@ -4,3 +4,47 @@
 @media(max-width:1100px){.sidebar{width:220px}.main{margin-left:220px}.content{padding:23px}.hero{padding:28px}.hero-orbit{transform:scale(.8);margin:0 -10px}.roadmap-grid{grid-template-columns:repeat(2,1fr)}.stats-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.sidebar{transform:translateX(-100%);transition:.22s;width:260px;box-shadow:12px 0 35px #0008}.sidebar.open{transform:none}.main{margin-left:0}.mobile-menu{display:block}.topbar{padding:0 15px}.breadcrumb{font-size:8px}.live-pill{display:none}.content{padding:15px}.hero{padding:24px;min-height:unset}.hero-orbit{display:none}.hero h1{font-size:34px}.stats-grid,.split-grid,.roadmap-grid,.lesson-grid,.project-grid,.senior-grid,.tracker-grid,.challenge-layout,.two-col{grid-template-columns:1fr}.detail-layout{grid-template-columns:1fr}.detail-side{position:static;display:flex;overflow:auto;gap:5px}.detail-side button{white-space:nowrap;width:auto}.capstone-map{grid-template-columns:repeat(2,1fr)}.footer{padding:13px 15px;gap:9px;flex-wrap:wrap}.footer span:nth-child(2){display:none}.view-head{flex-direction:column}.timer-display{font-size:34px}}
 \n.bonus-float{position:fixed;right:22px;bottom:22px;z-index:12;border:1px solid #7565a8;background:linear-gradient(110deg,#292444,#19283c);color:#d6caff;border-radius:999px;padding:10px 14px;font:10px "DM Mono";letter-spacing:.5px;box-shadow:0 8px 28px #0008}.bonus-float:hover{border-color:#b5a0ff;background:#332d54}@media(max-width:760px){.bonus-float{right:12px;bottom:12px;padding:9px 11px;font-size:9px}}
+/* OPSFORGE MONOCHROME SYSTEM — graphite, charcoal and cool silver */
+:root{
+ --bg:#090909;--surface:#111111;--surface2:#171717;--surface3:#202020;
+ --line:#303030;--line2:#414141;--text:#f0f0f0;--muted:#a0a0a0;
+ --accent:#d6d6d6;--accent2:#f5f5f5;--green:#b8b8b8;--red:#c1c1c1;
+ --amber:#a8a8a8;--blue:#c5c5c5;--purple:#bdbdbd;
+ --shadow:0 16px 42px #0009;color-scheme:dark;
+}
+body{background:#090909;color:#ededed}
+button,.btn,.small-btn,.filter-btn,.chip,.nav-item{transition:background .18s ease,border-color .18s ease,color .18s ease,transform .18s ease}
+button:hover,.btn:hover,.small-btn:hover{filter:brightness(1.18)}
+.nav-item.active,.filter-btn.active{background:#252525;border-color:#686868;color:#fff}
+.progress-fill{background:linear-gradient(90deg,#777,#e4e4e4)}
+.badge,.level,.severity,.pill-done{background:#242424;border-color:#494949;color:#e2e2e2}
+.lesson-hero,.lesson-block,.question-card,.incident-card,.project-card,.panel,.stat-card{background:#121212;border-color:#303030}
+.senior-tip{background:#191919;border-color:#777;color:#eee}
+.deep-dive-head{margin:28px 0 12px}.deep-dive-head h3{font-size:22px;margin:5px 0}.deep-dive-head p{color:#aaa;max-width:760px}
+.deep-dive-list{display:grid;gap:10px;margin-bottom:20px}
+.deep-dive-card{background:#111;border:1px solid #303030;border-radius:12px;overflow:hidden}
+.deep-dive-card[open]{border-color:#555}
+.deep-dive-card summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:13px;padding:17px 19px}
+.deep-dive-card summary::-webkit-details-marker{display:none}
+.deep-index{font:11px "DM Mono",monospace;color:#999;border:1px solid #444;border-radius:6px;padding:5px 7px}
+.deep-content{padding:0 20px 20px 52px;max-width:980px}
+.deep-content h4{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#aaa;margin:17px 0 6px}
+.deep-content p{color:#ddd;line-height:1.75;margin:0}
+.deep-code{white-space:pre-wrap;overflow-wrap:anywhere;background:#080808;border:1px solid #303030;border-radius:9px;padding:14px;color:#e1e1e1;font:12px/1.75 "DM Mono",monospace}
+.lab-workspace{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:13px;margin-top:14px}
+.lab-filebar{display:flex;justify-content:space-between;gap:10px;color:#aaa;font:10px "DM Mono",monospace;letter-spacing:.7px;padding-bottom:10px}
+.lab-editor{min-height:360px;width:100%;resize:vertical;font:12px/1.65 "DM Mono",monospace;background:#080808;color:#eee;border:1px solid #353535;border-radius:9px;padding:14px;tab-size:2}
+.lab-terminal-panel{padding:0;overflow:hidden}
+.lab-terminal-panel .terminal-bar{border-radius:0}
+.lab-terminal-panel .terminal-output{height:250px;max-height:250px;overflow:auto;background:#080808;padding:14px;font:11px/1.7 "DM Mono",monospace}
+.lab-command-palette{display:flex;gap:7px;flex-wrap:wrap;padding:10px;border-top:1px solid #292929;border-bottom:1px solid #292929}
+.lab-command-palette .chip{font:10px "DM Mono",monospace;white-space:normal;max-width:100%;text-align:left}
+.lab-task-block{margin-top:14px}
+.lab-task-block h3{margin:0}
+.lab-task-block h4{margin-top:20px;color:#ddd}
+.tab-row button{border:1px solid #3a3a3a;background:#171717;color:#ddd;border-radius:8px;padding:10px 13px}
+.tab-row button:hover{background:#292929;border-color:#777}
+.code-editor,.term-input,.field{background:#080808;color:#eee;border-color:#393939}
+.terminal,.terminal-output{background:#070707;border-color:#333}
+.bonus-float{background:#171717;border-color:#666;color:#eee;box-shadow:0 8px 28px #000}
+@media(max-width:900px){.lab-workspace{grid-template-columns:1fr}.deep-content{padding-left:18px}}
