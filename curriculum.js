@@ -1,5 +1,5 @@
 /* Each core track has 10 track-specific questions and 5 production incidents. */
-const T=(id,num,title,level,short,outcome,tools,explain,concepts,example,usecase,senior,lab,questions,incidents)=>({id,num,title,level,short,outcome,tools,explain,concepts,example,usecase,senior,lab,questions,incidents});
+const T=(id,num,title,level,short,outcome,tools,explain,concepts,example,usecase,senior,lab,questions,incidents)=>({id,num,title,level,short,outcome,tools,explain,concepts,example,usecase,senior,lab:{title:"Practical lab · "+title,objective:"Apply the skills from this track in a safe, reproducible exercise and capture evidence of the result.",tasks:lab},questions,incidents});
 window.CURRICULUM=[
 T("linux","01","Linux & Operating Systems","FOUNDATION","Operate the systems that run your workloads.","Navigate Linux, inspect processes, manage services, permissions, storage and logs.","Linux · Ubuntu · RHEL · systemd · SSH · journalctl",
 "Linux is the operating-system layer behind most servers, containers and Kubernetes nodes. Learn the filesystem, users/groups, permissions, processes, services, package management, storage, boot and logs. Investigate before changing: capture state, isolate the failure layer, make the smallest reversible fix and verify the real application health.",
