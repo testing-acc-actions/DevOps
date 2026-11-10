@@ -3,7 +3,7 @@
 const KEY="opsforge-progress-v2";
 const fresh=()=>({doneTracks:[],doneQuestions:[],doneCases:[],projectChecks:{},capChecks:{},attendance:{},totalSeconds:0,startedAt:null,ratings:[],notes:[],lastSeen:new Date().toISOString()});
 let state;
-try{state=Object.assign(fresh(),JSON.parse(localStorage.getItem(KEY)||"{}"));}catch(e){state=fresh();}
+try{state=Object.assign(fresh(),JSON.parse(localStorage.getItem(KEY)||"{}"));}catch(e){state=fresh();}if(state.startedAt){state.startedAt=null;try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
 let view="overview", currentTrack=null, activeProject=null, detailTab="overview", roadmapFilter="ALL", terminalPath="/home/learner", terminalFiles={"/home/learner/README.md":"Welcome to the OpsForge practice workspace. Type help to see supported commands.","/home/learner/app/config.yml":"app:\n  name: employee-api\n  port: 8080\n  environment: dev\n","/home/learner/app/server.log":"INFO  Service starting\nERROR  Database connection timeout\nINFO  Restart scheduled","/var/log/app.log":"2026-11-10T09:12:04Z INFO service started\n2026-11-10T09:13:12Z WARN slow database query\n2026-11-10T09:13:16Z ERROR connection pool exhausted","/etc/os-release":"NAME=PracticeLinux\nVERSION=1.0"},termHistory=[],timerInterval=null;
 const root=document.getElementById("dynamicView");
 const $=s=>document.querySelector(s);
