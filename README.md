@@ -86,3 +86,13 @@ Use least privilege, never commit secrets, tag resources with owner and expiry, 
 ## Publish with GitHub Pages
 
 In **Settings → Pages**, select **Deploy from a branch**, choose **main** and **/(root)**. GitHub Pages publishes the static `index.html` application.
+
+## Interview preparation for job changes
+
+The **Interview Prep** navigation area contains 86 curated DevOps interview questions across the 17 learning tracks. It offers four shuffle modes:
+- Topic-wise: choose a curriculum topic and shuffle its questions.
+- Concept-wise: choose an engineering concept and shuffle matching questions.
+- Tool-wise: choose a tool/tool family and shuffle matching questions.
+- All Mix: shuffle the full interview bank across topics.
+
+The question deck shows 10 randomized questions per batch. Answers are hidden by default; reveal them after attempting an answer aloud. Each reference answer includes an explanation, practical example and likely follow-up question. Shuffle starts a new randomized order and hides previously revealed answers.
