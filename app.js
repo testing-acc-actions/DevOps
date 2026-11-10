@@ -1,6 +1,6 @@
 (() => {
 "use strict";
-const KEY="devops-prep-progress-v3";
+const KEY="opsforge-progress-v2";
 const fresh=()=>({doneTracks:[],doneQuestions:[],doneCases:[],projectChecks:{},capChecks:{},attendance:{},totalSeconds:0,startedAt:null,ratings:[],questionScores:{},labDrafts:{},notes:[],lastSeen:new Date().toISOString()});
 let state;
 try{state=Object.assign(fresh(),JSON.parse(localStorage.getItem(KEY)||"{}"));}catch(e){state=fresh();}if(state.startedAt){state.startedAt=null;try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
