@@ -48,3 +48,38 @@ button:hover,.btn:hover,.small-btn:hover{filter:brightness(1.18)}
 .terminal,.terminal-output{background:#070707;border-color:#333}
 .bonus-float{background:#171717;border-color:#666;color:#eee;box-shadow:0 8px 28px #000}
 @media(max-width:900px){.lab-workspace{grid-template-columns:1fr}.deep-content{padding-left:18px}}
+
+/* Interview preparation: hidden-answer shuffled question deck */
+.interview-toolbar{display:grid;gap:13px;margin:16px 0}
+.interview-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.interview-tab{border:1px solid #383838;background:#151515;color:#aaa;border-radius:9px;padding:12px 10px;text-align:left;font-size:11px;font-weight:650;letter-spacing:.2px}
+.interview-tab.active{background:#292929;border-color:#777;color:#fff;box-shadow:inset 0 0 0 1px #444}
+.interview-controls{display:flex;align-items:end;gap:10px;flex-wrap:wrap}
+.interview-filter{display:grid;gap:6px;min-width:250px;flex:1}
+.interview-filter span{font:10px "DM Mono",monospace;letter-spacing:1px;color:#929292}
+.interview-filter select{appearance:auto;width:100%;background:#101010;border:1px solid #414141;border-radius:8px;color:#eee;padding:11px 12px;min-height:40px}
+.interview-status{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 17px;border:1px solid #333;border-radius:11px;background:#111;margin:14px 0}
+.interview-status b{font-size:13px;color:#f0f0f0}
+.interview-status p{font-size:11px;color:#999;margin:5px 0 0}
+.interview-count{display:grid;text-align:right;gap:3px}
+.interview-count strong{font:600 24px "Space Grotesk",sans-serif;color:#eee}
+.interview-count span{font:9px "DM Mono",monospace;color:#929292;letter-spacing:.8px}
+.interview-deck{display:grid;gap:12px}
+.interview-card{background:#111;border:1px solid #333;border-radius:12px;padding:17px 18px}
+.interview-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.interview-tags{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
+.interview-tags span{font:9px "DM Mono",monospace;color:#aaa;border:1px solid #393939;background:#1a1a1a;padding:5px 7px;border-radius:5px}
+.interview-card h3{font-size:15px;line-height:1.55;font-weight:600;color:#f2f2f2;margin:6px 0 13px}
+.interview-answer-actions{display:flex;gap:8px;align-items:center}
+.interview-answer{margin-top:14px;background:#181818;border-color:#484848;padding:17px}
+.interview-answer h4{font:10px "DM Mono",monospace;letter-spacing:1px;color:#aaa;margin:12px 0 6px}
+.interview-answer h4:first-child{margin-top:0}
+.interview-answer p{font-size:12px;line-height:1.75;color:#e1e1e1;margin:0}
+.interview-followup{border-left:2px solid #777;padding:10px 13px;margin-top:14px;background:#202020;border-radius:0 7px 7px 0}
+.interview-followup b{font:10px "DM Mono",monospace;color:#aaa;letter-spacing:.8px}
+.interview-followup p{margin-top:6px}
+.interview-pagination{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:16px 0;color:#aaa;font:10px "DM Mono",monospace}
+.interview-pagination>div{display:flex;gap:7px}
+.interview-pagination button:disabled{opacity:.35;cursor:not-allowed}
+.interview-note{line-height:1.7}
+@media(max-width:700px){.interview-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.interview-status{align-items:flex-start}.interview-pagination{align-items:flex-start;flex-direction:column}.interview-card{padding:14px}.interview-filter{min-width:100%}}
