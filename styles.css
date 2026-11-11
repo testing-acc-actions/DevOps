@@ -119,3 +119,23 @@ button:hover,.btn:hover,.small-btn:hover{filter:brightness(1.18)}
 .tree-step-copy>em{font:9px "DM Mono",monospace;line-height:1.6;color:#888;font-style:normal}
 .tree-step-open{font:9px "DM Mono",monospace;color:#aaa;white-space:nowrap}
 @media(max-width:650px){.tree-step{grid-template-columns:30px minmax(0,1fr);gap:9px;padding:11px}.tree-step-open{grid-column:2}.tree-goal>strong{font-size:18px}}
+
+/* Detailed topic teaching blocks: theory, flow diagrams and annotated code */
+.topic-guide{display:grid;gap:12px;margin:24px 0}
+.topic-guide-heading{padding:4px 2px 8px}
+.topic-guide-heading h3{font-size:21px;margin:6px 0}
+.topic-guide-heading p,.topic-guide-panel>p{color:#aaa;font-size:13px;line-height:1.75}
+.topic-guide-panel{border:1px solid #383838;border-radius:11px;background:#141414;padding:17px}
+.topic-guide-panel h4{font-size:13px;color:#eee;margin:0 0 10px}
+.guide-flow{display:grid;justify-items:stretch;max-width:760px;margin:10px auto}
+.guide-flow-step{display:grid;grid-template-columns:38px 1fr;align-items:center;gap:10px;padding:11px 13px;border:1px solid #454545;border-radius:8px;background:#1b1b1b}
+.guide-flow-step span{font:11px "DM Mono",monospace;color:#aaa}
+.guide-flow-step b{font-size:12px;color:#eee}
+.guide-flow-arrow{text-align:center;color:#888;font-size:16px;line-height:1.6}
+.guide-diagram-note{max-width:760px;margin:12px auto 0}
+.topic-code{white-space:pre;overflow-x:auto;padding:16px;border:1px solid #343434;border-radius:8px;background:#090909;color:#ddd;font:12px/1.7 "DM Mono",monospace}
+.code-walkthrough{display:grid;gap:8px;margin-top:12px}
+.code-walk-row{display:grid;grid-template-columns:minmax(120px,220px) 1fr;gap:12px;padding:10px 0;border-top:1px solid #333}
+.code-walk-row>b{font:11px "DM Mono",monospace;color:#ddd;overflow-wrap:anywhere}
+.code-walk-row>p{margin:0;color:#aaa;font-size:12px;line-height:1.65}
+@media(max-width:650px){.topic-guide-panel{padding:13px}.code-walk-row{grid-template-columns:1fr;gap:4px}.topic-code{font-size:11px}}
