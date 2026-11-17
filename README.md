@@ -42,7 +42,7 @@ Answers are hidden by default. Reveal them only after attempting an answer. Each
 
 ## Practice and projects
 
-The academy includes a standalone safe practice terminal, task-only labs, progressive project briefs, production incident practice, attendance, focus timer and progress export/import.
+The academy includes a simulated in-page terminal, guided Terraform with AWS (33 topics), AWS Cloud Engineering (26 topics), and GitHub Actions Engineering (26 topics), task-only labs, progressive project briefs, production incident practice, attendance, focus timer and progress export/import. An optional local Docker runtime provides a real browser-accessible Linux shell and LocalStack AWS emulator; it must be started by the learner and is not hosted by GitHub Pages.
 
 Labs and projects deliberately provide requirements, questions and resources rather than completed solution code. Learners are expected to design, implement, test, document and publish their own work.
 
@@ -50,7 +50,7 @@ Labs and projects deliberately provide requirements, questions and resources rat
 
 Progress is stored in browser local storage. It does not synchronize to GitHub or between devices. Export a JSON backup regularly.
 
-The practice terminal is a simulator. It does not execute commands on the user's computer, call AWS APIs or create cloud resources. Knowledge and incident scores are coaching heuristics, not certification or semantic grading.
+The existing Practice Terminal is a simulator. The optional Guided Cloud Labs runtime is a separate learner-started Docker Compose environment: it runs real commands locally and routes AWS CLI exercises to LocalStack. It does not provision a hosted disposable VM or provide real AWS account access. Knowledge and incident scores are coaching heuristics, not certification or semantic grading.
 
 ## Cost and security
 
@@ -63,6 +63,8 @@ The static academy itself does not require AWS. Before any real cloud lab, check
 - `app.js` — learning flow, interview shuffle, lab/project briefs, terminal and progress tracking
 - `curriculum.js` — 17-track curriculum, deep dives and assessments
 - `interview-bank.js` — hidden-answer job interview question bank
+- `hands-on-courses.js` — guided Terraform/AWS/GitHub Actions course catalog
+- `lab-runtime/` — optional local Docker terminal and LocalStack AWS emulator
 
 ## GitHub Pages
 
