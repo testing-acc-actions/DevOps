@@ -26,6 +26,8 @@ jobs:
           node --check app.js
           node --check curriculum.js
           node --check hands-on-courses.js
+          node --check topic-library-expansion.js
+          node --check topic-library-enhancements.js
           node --check interview-bank.js
       - name: Validate curriculum structure
         run: node scripts/validate-curriculum.cjs
