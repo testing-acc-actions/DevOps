@@ -1,0 +1,59 @@
+services:
+  terminal:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: devops-prep-terminal
+    ports:
+      - "127.0.0.1:7681:7681"
+    environment:
+      AWS_ACCESS_KEY_ID: test
+      AWS_SECRET_ACCESS_KEY: test
+      AWS_DEFAULT_REGION: us-east-1
+      AWS_EC2_METADATA_DISABLED: "true"
+      LAB_AWS_ENDPOINT: http://localstack:4566
+    volumes:
+      - lab-workspace:/workspace
+      - learner-home:/home/learner
+    depends_on:
+      localstack:
+        condition: service_healthy
+    networks: [labnet]
+    read_only: true
+    tmpfs:
+      - /tmp:size=128m,mode=1777
+      - /run:size=16m
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 256
+    mem_limit: 2g
+    cpus: 2
+    restart: unless-stopped
+
+  localstack:
+    image: localstack/localstack:4
+    container_name: devops-prep-local-aws
+    ports:
+      - "127.0.0.1:4566:4566"
+    environment:
+      SERVICES: s3,iam,sts,ec2,lambda,dynamodb,sqs,sns,logs,cloudwatch
+      DEFAULT_REGION: us-east-1
+      PERSISTENCE: "0"
+    networks: [labnet]
+    healthcheck:
+      test: ["CMD", "bash", "-c", "curl -fsS http://localhost:4566/_localstack/health >/dev/null"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+    mem_limit: 2g
+    cpus: 2
+    restart: unless-stopped
+
+networks:
+  labnet:
+    driver: bridge
+
+volumes:
+  lab-workspace:
+  learner-home:

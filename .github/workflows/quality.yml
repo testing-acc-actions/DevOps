@@ -2,7 +2,7 @@ name: Academy quality checks
 
 on:
   push:
-    branches: [main, feature/academy-v3]
+    branches: [main, feature/academy-v3, feature/hands-on-cloud-labs]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -25,6 +25,7 @@ jobs:
         run: |
           node --check app.js
           node --check curriculum.js
+          node --check hands-on-courses.js
           node --check interview-bank.js
       - name: Validate curriculum structure
         run: node scripts/validate-curriculum.cjs
