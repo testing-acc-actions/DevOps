@@ -29,7 +29,7 @@
   const enhance = () => {
     addStyles();
     const heading = root.querySelector(".section-head h2");
-    if (heading && heading.textContent.trim() === "Guided hands-on courses") {
+    if (heading && heading.textContent.trim() === "Learn a skill by doing the work") {
       heading.textContent = "Topic Library · Tool Courses";
       const p = root.querySelector(".section-head p");
       if (p) p.textContent = "Choose a tool, then study each term through concepts, demonstrations, code examples, questions and practical tasks.";
