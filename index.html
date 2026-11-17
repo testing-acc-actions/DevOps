@@ -6,20 +6,18 @@
   <meta name="theme-color" content="#080d18">
   <meta name="description" content="A hands-on DevOps, SRE, Platform Engineering and AI Operations academy.">
   <title>DevOps Prep — DevOps Engineering Academy</title>
-  <link rel="stylesheet" href="./styles.css?v=3.3.0">
+  <link rel="stylesheet" href="./styles.css?v=3.5.0">
 </head>
 <body>
 <div class="app-shell">
   <aside class="sidebar" id="sidebar">
-    <a class="brand" href="#roadmap" aria-label="DevOps Prep home"><span class="brand-mark">DP</span><span><b>DEV<span>OPS PREP</span></b><small>ENGINEERING ACADEMY</small></span></a>
+    <a class="brand" href="#topic-library" aria-label="DevOps Prep home"><span class="brand-mark">DP</span><span><b>DEV<span>OPS PREP</span></b><small>ENGINEERING ACADEMY</small></span></a>
     <div class="side-label">WORKSPACE</div>
     <nav class="nav" aria-label="Main navigation">
       <button class="nav-item" data-view="tree"><span>⌘</span> Learning Path Tree</button>
-      <button class="nav-item" data-view="roadmap"><span>⌘</span> Learning Roadmap</button>
       <button class="nav-item" data-view="learn"><span>▤</span> Topic Library</button>
       <button class="nav-item" data-view="interview"><span>⌖</span> Interview Prep</button>
       <button class="nav-item" data-view="terminal"><span>$_</span> Practice Terminal</button>
-      <button class="nav-item" data-view="handsOn"><span>⌁</span> Guided Cloud Labs</button>
       <button class="nav-item" data-view="projects"><span>◫</span> Labs & Projects</button>
       <button class="nav-item" data-view="tracker"><span>◷</span> Attendance & Tracker</button>
     </nav>
@@ -33,14 +31,14 @@
   <main class="main">
     <header class="topbar">
       <button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">☰</button>
-      <div class="breadcrumb">LEARNING ENVIRONMENT <span>/</span> <b id="crumb">LEARNING ROADMAP</b></div>
+      <div class="breadcrumb">LEARNING ENVIRONMENT <span>/</span> <b id="crumb">TOPIC LIBRARY</b></div>
       <div class="top-actions"><span class="live-pill"><i></i> PERSONAL WORKSPACE</span><button class="icon-button" id="exportTop" title="Export progress">⇩</button></div>
     </header>
     <div class="content" id="viewRoot">
       <section class="hero">
         <div class="hero-copy"><div class="eyebrow"><span></span> YOUR ENGINEERING JOURNEY STARTS HERE</div><h1>Learn to build it.<br><em>Learn to keep it running.</em></h1>
           <p>A structured path from command-line fundamentals to reliable production platforms, cloud-native delivery and AI-powered operations.</p>
-          <div class="hero-actions"><button class="btn primary" data-go="roadmap">Explore the roadmap <b>↗</b></button><button class="btn secondary" data-go="terminal">Open practice terminal <b>⌁</b></button></div>
+          <div class="hero-actions"><button class="btn primary" data-go="learn">Explore Topic Library <b>↗</b></button><button class="btn secondary" data-go="terminal">Open practice terminal <b>⌁</b></button></div>
         </div>
         <div class="hero-orbit" aria-hidden="true"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="orbit-core">OPS<br><b>∞</b></div><span class="orbit-tag tag-a">AUTOMATE</span><span class="orbit-tag tag-b">OBSERVE</span><span class="orbit-tag tag-c">IMPROVE</span></div>
       </section>
@@ -56,6 +54,7 @@
 <script src="./topic-library-expansion.js"></script>
 <script src="./topic-guides.js"></script>
 <script src="./interview-bank.js"></script>
-<script src="./app.js?v=3.4.0"></script>
+<script src="./app.js?v=3.5.0"></script>
+<script src="./topic-library-enhancements.js?v=3.5.0"></script>
 </body>
 </html>
