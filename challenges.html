@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080d18">
+<meta name="description" content="Personal 100-day DevOps and Cloud engineering practice workspace.">
+<title>100-Day Practice Challenges — DevOps Prep</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+.challenge-wrap{max-width:1450px;margin:auto;padding:28px 34px 60px}
+.challenge-hero{padding:30px;border:1px solid #2a415b;border-radius:18px;background:linear-gradient(110deg,#102238,#12303b);margin-bottom:22px}
+.challenge-hero h1{font:600 clamp(26px,4vw,40px)/1.15 'Space Grotesk';margin:8px 0}
+.challenge-hero p{color:#a6b9ce;max-width:850px}
+.challenge-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.challenge-links a,.day-action{display:inline-block;text-decoration:none;border:1px solid #3b536d;background:#172840;color:#dceaf8;border-radius:8px;padding:9px 12px;font-size:12px}
+.challenge-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.challenge-tabs button{border:1px solid #30465f;background:#101b2a;color:#aebed0;border-radius:20px;padding:8px 14px}
+.challenge-tabs button.active{border-color:#57d9d0;color:#57d9d0;background:#17313a}
+.challenge-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
+.challenge-summary .stat-card{min-width:0}
+.module{border:1px solid #263b53;background:#0e1928;border-radius:13px;margin:12px 0;overflow:hidden}
+.module-head{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 17px;cursor:pointer}
+.module-head h3{margin:0;font:600 15px 'Space Grotesk'}
+.module-head p{margin:3px 0 0;color:#91a3bd;font-size:11px}
+.module-days{display:none;padding:0 14px 14px;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.module.open .module-days{display:grid}
+.day{border:1px solid #263b53;background:#101e30;border-radius:10px;padding:12px}
+.day.done{border-color:#36715f}
+.day-top{display:flex;justify-content:space-between;gap:8px;color:#57d9d0;font:10px 'DM Mono'}
+.day h4{font:600 12px 'Space Grotesk';margin:7px 0}
+.day p{font-size:11px;color:#a7b7c9;margin:5px 0}
+.day label{display:flex;gap:7px;align-items:center;font-size:10px;color:#8ea3bb;margin-top:9px}
+.day input{accent-color:#57d9d0}
+.day textarea{width:100%;min-height:54px;resize:vertical;margin-top:8px;background:#091320;border:1px solid #2b4057;border-radius:7px;padding:8px;color:#e9f0fb;font:11px 'DM Sans'}
+.safety-note{padding:13px;border:1px solid #705b32;background:#2a2418;color:#d9c89f;border-radius:10px;font-size:11px;margin:18px 0}
+.back-home{color:#9fded8;text-decoration:none;font-size:12px}
+@media(max-width:760px){.challenge-wrap{padding:18px}.challenge-summary{grid-template-columns:1fr}.module-days{grid-template-columns:1fr}.challenge-hero{padding:20px}}
+</style></head>
+<body>
+<div class="challenge-wrap">
+<a class="back-home" href="./index.html">← Back to DevOps Prep Academy</a>
+<section class="challenge-hero">
+<div class="eyebrow"><span></span> PERSONAL HANDS-ON WORKSPACE</div>
+<h1>Two 100-day engineering journeys.</h1>
+<p>Practice one small task at a time. Record what you built, commands you used, evidence, problems and cleanup. This is an independent learning companion—not an official KodeKloud product or a copy of its course material.</p>
+<div class="challenge-links">
+<a href="https://kodekloud.com/100-days-of-devops" target="_blank" rel="noopener">Official 100 Days of DevOps ↗</a>
+<a href="https://kodekloud.com/100-days-of-cloud" target="_blank" rel="noopener">Official 100 Days of Cloud ↗</a>
+</div></section>
+<div class="challenge-tabs" role="tablist">
+<button class="active" data-track="devops">100 Days of DevOps</button>
+<button data-track="cloud">100 Days of Cloud</button>
+</div>
+<div id="challengeRoot"></div>
+<div class="safety-note"><b>Cloud cost & safety:</b> This repository page does not create infrastructure. Before running a real cloud task, confirm the service is eligible for your account, check current regional pricing and quotas, set a budget alert, use least privilege, avoid secrets in Git, and destroy temporary resources. Prefer local simulations or free-tier-safe exercises when uncertain.</div>
+</div>
+<script src="./challenges.js"></script>
+</body></html>
