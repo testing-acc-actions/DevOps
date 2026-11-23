@@ -40,6 +40,12 @@ Answers are hidden by default. Reveal them only after attempting an answer. Each
 
 17 tracks cover Linux, Bash/Python, Git, networking, build systems, CI/CD, containers, Kubernetes, Terraform, AWS, GitOps, observability, DevSecOps, SRE, platform engineering, AI operations and FinOps.
 
+## 100-day challenge workspace
+
+Open the [100-Day Challenges workspace](./challenges.html) from the academy navigation. It contains two original, self-paced 100-day practice plans: DevOps (Linux, Git, networking, builds, CI/CD, containers, Kubernetes, IaC, security and SRE) and Cloud (account safety, IAM, networking, compute, storage, databases, serverless, automation, monitoring and architecture). Each day includes a practical objective, a deliverable prompt, a completion checkbox and a notes area. Progress and notes are stored in the browser's local storage and do not sync between devices.
+
+These are independent learning materials inspired by the public topic areas and hands-on format of KodeKloud's challenges. They do not reproduce KodeKloud's task text, labs, validation, branding or paid content. Use the official [100 Days of DevOps](https://kodekloud.com/100-days-of-devops) and [100 Days of Cloud](https://kodekloud.com/100-days-of-cloud) pages for their own challenge environments and account progress.
+
 ## Practice and projects
 
 The academy includes a simulated in-page terminal, guided Terraform with AWS (33 topics), AWS Cloud Engineering (26 topics), and GitHub Actions Engineering (26 topics), task-only labs, progressive project briefs, production incident practice, attendance, focus timer and progress export/import. An optional local Docker runtime provides a real browser-accessible Linux shell and LocalStack AWS emulator; it must be started by the learner and is not hosted by GitHub Pages.
